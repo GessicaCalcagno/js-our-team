@@ -68,15 +68,38 @@ team.forEach((curTeam) => {
   );
 });
 
+// //___________________MILESTONE 2_______________________
+// //Prova stampa in DOM semplice
+// team.forEach((curTeam) => {
+//   console.log(curTeam);
+//   let contElem = document.getElementById("container");
+//   contElem.innerHTML += `
+//     <div>
+//     <h2 id="name"> Nome: ${curTeam.name} </h2>
+//     <p id="job"> Job: ${curTeam.job} </p>
+//     <img src="../img/${curTeam.photo}" alt="Foto di ${curTeam.name}">
+//     </div>`; // Bonus 1
+// });
+
 //___________________MILESTONE 2_______________________
 //Prova stampa in DOM semplice
 team.forEach((curTeam) => {
   console.log(curTeam);
-  let contElem = document.getElementById("container");
+  let contElem = document.getElementById("members");
   contElem.innerHTML += `
-    <div>
-    <h2 id="name"> Nome: ${curTeam.name} </h2>
-    <p id="job"> Job: ${curTeam.job} </p>   
-    <img src="../img/${curTeam.photo}" alt="Foto di ${curTeam.name}"> 
-    </div>`; // Bonus 1
+  <div class="col" >
+    <div class="card-group">
+        <div class="card mt-3" id="color-card">
+          <img src="../img/${curTeam.photo}" class="card-img-top" alt="..." />
+          <div class="card-body text-center">
+            <h5 class="card-title" style="font-family: 'Georgia', serif;">${curTeam.name}</h5>
+            <p class="card-text" style="font-style: italic;">
+            ${curTeam.job}
+            </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    `;
 });

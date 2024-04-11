@@ -22,5 +22,5 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 - [X] Trasformare la stringa foto in una immagine effettiva.
 
 4. BONUS 2:
-Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
+- [X] Organizzare i singoli membri in card/schede. 
 
