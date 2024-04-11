@@ -11,38 +11,37 @@ const team = [
   {
     name: "Wayne Barnett",
     job: "Founder & CEO",
-    foto: "wayne-barnett-founder-ceo.jpg",
+    photo: "wayne-barnett-founder-ceo.jpg",
   },
   {
     name: "Angela Caroll",
     job: "Chief Editor",
-    foto: "angela-caroll-chief-editor.jpg",
+    photo: "angela-caroll-chief-editor.jpg",
   },
   {
     name: "Walter Gordon",
     job: "Office Manager",
-    foto: "walter-gordon-office-manager.jpg",
+    photo: "walter-gordon-office-manager.jpg",
   },
   {
     name: "Angela Lopez",
     job: "Social Media Manager ",
-    foto: "angela-lopez-social-media-manager.jpg",
+    photo: "angela-lopez-social-media-manager.jpg",
   },
   {
     name: "Scott Estrada",
     job: "Developer",
-    foto: "scott-estrada-developer.jpg",
+    photo: "scott-estrada-developer.jpg",
   },
   {
     name: "Barbara Ramos",
     job: "Graphic Designer",
-    foto: "barbara-ramos-graphic-designer.jpg",
+    photo: "barbara-ramos-graphic-designer.jpg",
   },
 ];
 
 //Prove
 //console.log(team[(0, 3)].job);
-
 
 //___________________MILESTONE 1_______________________
 
@@ -64,7 +63,20 @@ const team = [
 
 team.forEach((curTeam) => {
   console.log(
-    `Nome: ${curTeam.name}, Ruolo: ${curTeam.job}, Foto: ${curTeam.foto}
+    `Nome: ${curTeam.name}, Ruolo: ${curTeam.job}, Foto: ${curTeam.photo}
     __________________________________________________`
   );
+});
+
+//___________________MILESTONE 2_______________________
+//Prova stampa in DOM semplice
+team.forEach((curTeam) => {
+  console.log(curTeam);
+  let contElem = document.getElementById("container");
+  contElem.innerHTML += `
+    <div>
+    <h2 id="name"> Nome: ${curTeam.name} </h2>
+    <p id="job"> Job: ${curTeam.job} </p>   
+    <img src="../img/${curTeam.photo}" alt="Foto di ${curTeam.name}"> 
+    </div>`; // Bonus 1
 });

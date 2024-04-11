@@ -15,3 +15,12 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 - [X] Stampare su console le informazioni di nome, ruolo e la stringa della foto per ogni membro del team.
 
 
+2. MILESTONE:
+- [X] Stampare le stesse informazioni su DOM sottoforma di stringhe.
+
+3. BONUS 1:
+- [X] Trasformare la stringa foto in una immagine effettiva.
+
+4. BONUS 2:
+Organizzare i singoli membri in card/schede. Se non vi sentite particolarmente creativi, potete prendere uno spunto dallo screenshot allegato.
+
